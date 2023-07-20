@@ -1,0 +1,25 @@
+Found 9 files matching specified types.
+An error occurred during the process: make_archive() got multiple values for argument 'root_dir'
+An error occurred during the process: name 'os' is not defined
+Found 9 files matching specified types.
+An error occurred during the process: make_archive() got multiple values for argument 'root_dir'
+2023-05-28 11:38:26,235 - INFO - Found 9 files matching specified types.
+2023-05-28 11:38:26,235 - ERROR - An error occurred during the process: make_archive() got multiple values for argument 'root_dir'
+2023-05-28 11:40:06,614 - INFO - Found 9 files matching specified types.
+2023-05-28 11:40:06,615 - ERROR - An error occurred during the process: make_archive() got multiple values for argument 'root_dir'
+2023-05-28 11:42:32,956 - INFO - Found 9 files matching specified types.
+2023-05-28 11:42:32,957 - ERROR - An error occurred during the process: make_archive() takes from 2 to 9 positional arguments but 12 were given
+2023-05-28 11:43:29,005 - INFO - Found 9 files matching specified types.
+2023-05-28 11:43:29,005 - ERROR - An error occurred during the process: make_archive() takes from 2 to 9 positional arguments but 12 were given
+2023-05-28 11:44:48,278 - INFO - Found 9 files matching specified types.
+2023-05-28 11:44:48,377 - INFO - Archived files to: archive.zip
+2023-05-28 11:44:48,378 - INFO - Moved file C:\datatest\A Perspective View of Cotton Leaf Image Classification Using.pdf to C:\datatest\archive
+2023-05-28 11:44:48,379 - INFO - Moved file C:\datatest\Document.docx to C:\datatest\archive
+2023-05-28 11:44:48,380 - INFO - Moved file C:\datatest\Document1.docx to C:\datatest\archive
+2023-05-28 11:44:48,380 - INFO - Moved file C:\datatest\Essay 1.docx to C:\datatest\archive
+2023-05-28 11:44:48,381 - INFO - Moved file C:\datatest\file_analysis.txt to C:\datatest\archive
+2023-05-28 11:44:48,382 - INFO - Moved file C:\datatest\Material.docx to C:\datatest\archive
+2023-05-28 11:44:48,382 - INFO - Moved file C:\datatest\Understanding Generative AI.docx to C:\datatest\archive
+2023-05-28 11:44:48,383 - INFO - Moved file C:\datatest\weka tutorial.txt to C:\datatest\archive
+2023-05-28 11:44:48,383 - INFO - Moved file C:\datatest\WekaManual-3-7-8.pdf to C:\datatest\archive
+2023-05-28 11:44:48,383 - INFO - Process completed successfully.

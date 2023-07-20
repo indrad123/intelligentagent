@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Safe Files</h1>
+        <ul>
+        {% for file in safe_files %}
+            <li>{{ file }}</li>
+        {% endfor %}
+        </ul>
+        
+        <h1>Suspicious Files</h1>
+        <ul>
+        {% for file in suspicious_files %}
+            <li>{{ file }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
