@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File</title>
+    <style>
+        /* Styling for the body of the webpage, padding is added for better visual appearance */
+        body {
+            padding: 20px;
+        }
+
+        /* Styling for the file input and submit button, height and margin are adjusted for better visual appearance */
+        input[type=file],
+        input[type=submit] {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the submit button, width, background color, text color, border style, and border radius are adjusted for better visual appearance and user experience */
+        input[type=submit] {
+            width: 70px;
+            background-color: #007AFF;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 2px;
+        }
+    </style>
+    <script type="text/javascript">
+        /* This function is triggered when the user selects a file */
+        function checkFile() {
+            /* Get the file input element */
+            var fileInput = document.getElementById('fileInput');
+
+            /* Check if a file has been selected */
+            if (fileInput.value == '') {
+                /* If no file is selected, the upload button is disabled to prevent empty submissions */
+                document.getElementById('uploadButton').disabled = true;
+            } else {
+                /* If a file is selected, the upload button is enabled allowing the user to submit the form */
+                document.getElementById('uploadButton').disabled = false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>File Upload</h1>
+        <!-- Form for file upload, it sends a POST request to the /upload route on submission -->
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <!-- File input field, it allows multiple file selection and triggers the checkFile function when a file is selected or deselected -->
+            <input type="file" id="fileInput" name="files[]" multiple="" onchange="checkFile()"> <br>
+            <!-- Submit button for the form, it is disabled by default and will be enabled once a file is selected -->
+            <input type="submit" id="uploadButton" value="Upload" disabled>
+        </form>
+    </div>
+</body>
+</html>

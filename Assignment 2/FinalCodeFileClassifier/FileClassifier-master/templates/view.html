@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Styling for the body of the webpage, padding is added for better visual appearance -->
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for the file lists -->
+    <div class="container">
+        <!-- Heading for the list of safe files -->
+        <h1>Safe Files</h1>
+        <!-- Unordered list for displaying the safe files -->
+        <ul>
+        <!-- Loop through each file in the safe_files list passed from the server -->
+        {% for file in safe_files %}
+            <!-- List item for each file, displaying the file name -->
+            <li>{{ file }}</li>
+        {% endfor %}
+        </ul>
+        
+        <!-- Heading for the list of suspicious files -->
+        <h1>Suspicious Files</h1>
+        <!-- Unordered list for displaying the suspicious files -->
+        <ul>
+        <!-- Loop through each file in the suspicious_files list passed from the server -->
+        {% for file in suspicious_files %}
+            <!-- List item for each file, displaying the file name -->
+            <li>{{ file }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
